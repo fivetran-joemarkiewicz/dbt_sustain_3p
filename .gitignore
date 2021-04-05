@@ -1,0 +1,5 @@
+/dbt-env/
+/logs/
+/target/
+/.idea/
+/notest.txt
