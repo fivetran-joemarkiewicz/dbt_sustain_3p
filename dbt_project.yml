@@ -12,16 +12,16 @@ vars:
     ad_reporting__linkedin_ads_enabled: true
     ad_reporting__google_ads_enabled: true
     ad_reporting__twitter_ads_enabled: false
-    ad_reporting__facebook_ads_enabled: false
+    ad_reporting__facebook_ads_enabled: true
 
   # Marketing
   hubspot:
     hubspot_marketing_enabled: true                        # Disables all marketing models
-    hubspot_contact_enabled: false                          # Disables the contact models
-    hubspot_contact_list_enabled: false                     # Disables contact list models
-    hubspot_contact_list_member_enabled: false              # Disables contact list member models
-    hubspot_contact_property_enabled: false                 # Disables the contact property models
-    hubspot_email_event_enabled: false                      # Disables all email_event models and functionality
+    hubspot_contact_enabled: true                          # Disables the contact models
+    hubspot_contact_list_enabled: true                     # Disables contact list models
+    hubspot_contact_list_member_enabled: true              # Disables contact list member models
+    hubspot_contact_property_enabled: true                 # Disables the contact property models
+    hubspot_email_event_enabled: true                      # Disables all email_event models and functionality
     hubspot_email_event_bounce_enabled: false
     hubspot_email_event_click_enabled: false
     hubspot_email_event_deferred_enabled: false
@@ -36,10 +36,10 @@ vars:
 
     # Sales
 
-    hubspot_sales_enabled: false                            # Disables all sales models
+    hubspot_sales_enabled: true                            # Disables all sales models
     hubspot_company_enabled: false
     hubspot_deal_enabled: false
-    hubspot_engagement_enabled: false                       # Disables all engagement models and functionality
+    hubspot_engagement_enabled: true                       # Disables all engagement models and functionality
     hubspot_engagement_contact_enabled: false
     hubspot_engagement_company_enabled: false
     hubspot_engagement_deal_enabled: false
@@ -75,11 +75,11 @@ models:
       enabled: false
 
     facebook_ads:
-      enabled: false
+      enabled: true
     facebook_ads_source:
-      enabled: false
+      enabled: true
     facebook_ads_creative_history:
-      enabled: false
+      enabled: true
 
     google_ads:
       enabled: true
