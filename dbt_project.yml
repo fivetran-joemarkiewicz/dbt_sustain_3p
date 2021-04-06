@@ -75,11 +75,11 @@ models:
       enabled: false
 
     facebook_ads:
-      enabled: true
+      enabled: false
     facebook_ads_source:
-      enabled: true
+      enabled: false
     facebook_ads_creative_history:
-      enabled: true
+      enabled: false
 
     google_ads:
       enabled: true
