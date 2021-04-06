@@ -17,7 +17,7 @@ vars:
   # Marketing
   hubspot:
     hubspot_marketing_enabled: true                        # Disables all marketing models
-    hubspot_contact_enabled: true                          # Disables the contact models
+    hubspot_contact_enabled: false                          # Disables the contact models
     hubspot_contact_list_enabled: true                     # Disables contact list models
     hubspot_contact_list_member_enabled: true              # Disables contact list member models
     hubspot_contact_property_enabled: true                 # Disables the contact property models
