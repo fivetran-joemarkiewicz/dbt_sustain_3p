@@ -14,8 +14,6 @@ vars:
     ad_reporting__twitter_ads_enabled: false
     ad_reporting__facebook_ads_enabled: false
 
-vars:
-
   # Marketing
   hubspot:
     hubspot_marketing_enabled: true                        # Disables all marketing models
@@ -30,7 +28,6 @@ vars:
     hubspot_email_event_delivered_enabled: false
     hubspot_email_event_dropped_enabled: false
     hubspot_email_event_forward_enabled: false
-    hubspot_email_event_click_enabled: false
     hubspot_email_event_opens_enabled: false
     hubspot_email_event_print_enabled: false
     hubspot_email_event_sent_enabled: false
