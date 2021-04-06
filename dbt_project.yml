@@ -12,7 +12,7 @@ vars:
     ad_reporting__linkedin_ads_enabled: true
     ad_reporting__google_ads_enabled: true
     ad_reporting__twitter_ads_enabled: false
-    ad_reporting__facebook_ads_enabled: false
+    ad_reporting__facebook_ads_enabled: true
 
   # Marketing
   hubspot:
@@ -85,3 +85,8 @@ models:
       enabled: true
     google_ads_source:
       enabled: true
+
+  hubspot:
+    +schema: pii_marketing
+  hubspot_source:
+    +schema: pii_marketing_stg_hubspot # leave blank for just the target_schema
