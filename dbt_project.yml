@@ -1,4 +1,4 @@
-name: 'ad_reporting'
+name: 'sustain_3p'
 version: '1.0.0'
 config-version: 2
 profile: 'sustain-nonprod-snowflake'
@@ -6,45 +6,47 @@ profile: 'sustain-nonprod-snowflake'
 require-dbt-version: [">=0.18.0", "<0.20.0"]
 
 vars:
-  ad_reporting__pinterest_enabled: false
-  ad_reporting__microsoft_ads_enabled: true
-  ad_reporting__linkedin_ads_enabled: true
-  ad_reporting__google_ads_enabled: true
-  ad_reporting__twitter_ads_enabled: false
-  ad_reporting__facebook_ads_enabled: false
+  ad_reporting:
+    ad_reporting__pinterest_enabled: false
+    ad_reporting__microsoft_ads_enabled: true
+    ad_reporting__linkedin_ads_enabled: true
+    ad_reporting__google_ads_enabled: true
+    ad_reporting__twitter_ads_enabled: false
+    ad_reporting__facebook_ads_enabled: false
 
 models:
   ad_reporting:
-    +materialized: view
+    ad_reporting:
+      +materialized: view
 
-  pinterest:
-    enabled: false
-  pinterest_source:
-    enabled: false
+    pinterest:
+      enabled: false
+    pinterest_source:
+      enabled: false
 
-  microsoft_ads:
-    enabled: true
-  microsoft_ads_source:
-    enabled: true
+    microsoft_ads:
+      enabled: true
+    microsoft_ads_source:
+      enabled: true
 
-  linkedin:
-    enabled: true
-  linkedin_source:
-    enabled: true
+    linkedin:
+      enabled: true
+    linkedin_source:
+      enabled: true
 
-  twitter_ads:
-    enabled: false
-  twitter_ads_source:
-    enabled: false
+    twitter_ads:
+      enabled: false
+    twitter_ads_source:
+      enabled: false
 
-  facebook_ads:
-    enabled: false
-  facebook_ads_source:
-    enabled: false
-  facebook_ads_creative_history:
-    enabled: false
+    facebook_ads:
+      enabled: false
+    facebook_ads_source:
+      enabled: false
+    facebook_ads_creative_history:
+      enabled: false
 
-  google_ads:
-    enabled: true
-  google_ads_source:
-    enabled: true
+    google_ads:
+      enabled: true
+    google_ads_source:
+      enabled: true
