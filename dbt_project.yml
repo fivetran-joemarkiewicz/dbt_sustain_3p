@@ -75,9 +75,9 @@ models:
       enabled: false
 
     facebook_ads:
-      enabled: false
+      enabled: true
     facebook_ads_source:
-      enabled: false
+      enabled: true
     facebook_ads_creative_history:
       enabled: false
 
